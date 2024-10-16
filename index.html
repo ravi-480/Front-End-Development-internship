@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Premium Services</title>
+
+    <!-- Google Fonts: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      .service-card {
+        transition: transform 0.6s ease-in-out;
+      }
+
+      .service-card:hover {
+        transform: rotate(360deg) scale(1.05);
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <div
+      id="services-section"
+      class="mx-10 my-10 p-10 bg-gray-50 rounded-lg shadow-lg"
+    >
+      <h1 class="text-start text-4xl font-extrabold mb-10 text-purple-900">
+        Our Services
+      </h1>
+
+      <!-- Services Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div
+          class="service-card p-8 bg-white shadow-md rounded-lg text-center min-h-[350px] flex flex-col justify-between"
+        >
+          <div class="icon-container mx-auto mb-6">
+            <i class="fas fa-toolbox service-icon text-5xl text-blue-600"></i>
+          </div>
+          <h2 class="text-2xl font-semibold text-gray-800">
+            Emergency Plumbing
+          </h2>
+          <p class="mt-4 text-gray-600">
+            We offer 24/7 emergency services, including nights and weekends, to
+            ensure your plumbing issues are handled promptly.
+          </p>
+          <a href="#" class="text-blue-900 text-xl font-semibold mt-6 block"
+            >Discover More &gt;</a
+          >
+        </div>
+
+        <!-- Service Card 2: Drains and Pipes -->
+        <div
+          class="service-card p-8 bg-white shadow-md rounded-lg text-center min-h-[350px] flex flex-col justify-between"
+        >
+          <div class="icon-container mx-auto mb-6">
+            <i class="fas fa-faucet service-icon text-5xl text-blue-600"></i>
+          </div>
+          <h2 class="text-2xl font-semibold text-gray-800">
+            Plumbing & Drainage
+          </h2>
+          <p class="mt-4 text-gray-600">
+            As the leading plumbing and drainage company, we provide expert
+            repairs and routine maintenance daily.
+          </p>
+          <a href="#" class="text-blue-900 text-xl font-semibold mt-6 block"
+            >Discover More &gt;</a
+          >
+        </div>
+
+        <!-- Service Card 3: Water Damage Restoration -->
+        <div
+          class="service-card p-8 bg-white shadow-md rounded-lg text-center min-h-[350px] flex flex-col justify-between"
+        >
+          <div class="icon-container mx-auto mb-6">
+            <i class="fas fa-water service-icon text-5xl text-blue-600"></i>
+          </div>
+          <h2 class="text-2xl font-semibold text-gray-800">
+            Water Damage Services
+          </h2>
+          <p class="mt-4 text-gray-600">
+            Our state-of-the-art water extraction and cleaning equipment is
+            ready to restore your home in the event of water damage.
+          </p>
+          <a href="#" class="text-blue-900 text-xl font-semibold mt-6 block"
+            >Discover More &gt;</a
+          >
+        </div>
+
+        <!-- Service Card 4: Water Heater Solutions -->
+        <div
+          class="service-card p-8 bg-white shadow-md rounded-lg text-center min-h-[350px] flex flex-col justify-between"
+        >
+          <div class="icon-container mx-auto mb-6">
+            <i class="fas fa-fire-alt service-icon text-5xl text-blue-600"></i>
+          </div>
+          <h2 class="text-2xl font-semibold text-gray-800">Water Heaters</h2>
+          <p class="mt-4 text-gray-600">
+            We specialize in the repair and installation of electric, gas, and
+            tankless water heaters for homes and businesses.
+          </p>
+          <a href="#" class="text-blue-900 text-xl font-semibold mt-6 block"
+            >Discover More &gt;</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  </body>
+</html>
